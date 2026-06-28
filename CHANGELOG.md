@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2026-06-28
+
+Stable test release for the in-app auto-updater. Removes em dashes from user-facing UI copy.
+
 ## [0.0.1] - 2026-06-28
 
 Test release to validate the `loridotsh/lori-updates` publish pipeline (updater artifacts + `.dmg`).
