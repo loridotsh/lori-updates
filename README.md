@@ -1,6 +1,6 @@
 # Lori
 
-> **The Operating System for AI Coding.**
+> **The AI Workspace.**
 
 **AI models change. Coding agents change. Your workflow shouldn't.**
 
