@@ -46,7 +46,3 @@ Found a bug or have an idea?
 ## Changelog
 
 See **[CHANGELOG.md](./CHANGELOG.md)**.
-
-## Source
-
-Source code and development: **[github.com/loridotsh/lori](https://github.com/loridotsh/lori)**
