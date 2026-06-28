@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.3] - 2026-06-28
+
+First **Apple-notarized** public release. macOS downloads open without Gatekeeper “damaged app” warnings.
+
+### Added
+
+- **Developer ID signing + notarization** — hardened runtime entitlements for spawning agent CLIs; CI wired for `APPLE_*` secrets
+- [SIGNING.md](docs/SIGNING.md) — setup guide for local and GitHub Actions releases
+
 ## [0.0.2] - 2026-06-28
 
 Stable test release for the in-app auto-updater. Removes em dashes from user-facing UI copy.
