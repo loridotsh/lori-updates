@@ -1,8 +1,12 @@
 # Lori
 
-**Run every AI coding agent from one place.**
+> **The Operating System for AI Coding.**
 
-Lori is a local macOS app that unifies Claude Code, OpenCode, Codex, and other agentic CLIs in one workspace—with shared MCP plugins, skills, and provider setup.
+**AI models change. Coding agents change. Your workflow shouldn't.**
+
+Lori is a vendor neutral workspace that brings **Claude Code, Codex, OpenCode, Gemini CLI,** and future AI coding agents together in one place with shared sessions, MCPs, providers, skills, and configuration.
+
+Configure once. Switch instantly. Never rebuild your AI development environment.
 
 ## Download
 
@@ -10,21 +14,35 @@ Get the latest release for **Apple Silicon (M1/M2/M3)**:
 
 **[Releases →](https://github.com/loridotsh/lori/releases/latest)**
 
-In-app updates: after your first install, use the **Update** button in the titlebar when a new version is available.
+In app updates are available after your first install.
 
 ## Install (macOS)
 
-1. Download the `.dmg` from [Releases](https://github.com/loridotsh/lori/releases/latest)
-2. Drag Lori to Applications
-3. If macOS blocks first launch: **right-click Lori → Open**, then confirm **Open**  
-   Or allow it in **System Settings → Privacy & Security**
+1. Download the latest `.dmg` from **Releases**
+2. Drag **Lori** into **Applications**
+3. Launch Lori
+
+If macOS blocks the first launch:
+
+* Right click **Lori** and select **Open**
+* Or allow it in **System Settings → Privacy & Security**
 
 Requires macOS 10.15+ on Apple Silicon.
 
-## Issues & feedback
+## Philosophy
 
-[Open an issue](https://github.com/loridotsh/lori/issues) for bugs, install problems, or feature requests.
+Every AI company is building a better coding agent.
+
+Lori isn't another one.
+
+It's the workspace that lets you use them all.
+
+## Issues & Feedback
+
+Found a bug or have an idea?
+
+**[Open an issue](https://github.com/loridotsh/lori/issues)**
 
 ## Changelog
 
-See [CHANGELOG.md](./CHANGELOG.md).
+See **[CHANGELOG.md](./CHANGELOG.md)**.
