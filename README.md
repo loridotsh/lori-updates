@@ -12,7 +12,7 @@ Configure once. Switch instantly. Never rebuild your AI development environment.
 
 Get the latest release for **Apple Silicon (M1/M2/M3)**:
 
-**[Releases →](https://github.com/loridotsh/lori/releases/latest)**
+**[Releases →](https://github.com/loridotsh/lori-updates/releases/latest)**
 
 In app updates are available after your first install.
 
@@ -46,3 +46,7 @@ Found a bug or have an idea?
 ## Changelog
 
 See **[CHANGELOG.md](./CHANGELOG.md)**.
+
+## Source
+
+Source code and development: **[github.com/loridotsh/lori](https://github.com/loridotsh/lori)**
