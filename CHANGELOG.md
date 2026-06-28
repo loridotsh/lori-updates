@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.1] - 2026-06-28
+
+Test release to validate the `loridotsh/lori-updates` publish pipeline (updater artifacts + `.dmg`).
+
 ## [0.1.0] - 2026-06-28
 
-First public beta for **macOS Apple Silicon**. Download from [GitHub Releases](https://github.com/loridotsh/lori/releases/tag/v0.1.0). In-app updates via the titlebar **Update** button.
+First public beta for **macOS Apple Silicon**. Download from [GitHub Releases](https://github.com/loridotsh/lori-updates/releases/tag/v0.1.0). In-app updates via the titlebar **Update** button.
 
 ### Added
 
@@ -22,7 +26,7 @@ First public beta for **macOS Apple Silicon**. Download from [GitHub Releases](h
 - **Session git worktrees** — optional per-session isolation on its own branch; Changes sidebar (`⌘L`) for stage, commit, push, pull, sync, and PR creation
 - **Code review in Changes** — turn-scoped git diff with syntax highlighting
 - **Usage dashboard** — Settings → Usage with per-agent token stats, heatmap, and chart (from native CLI transcripts)
-- **In-app auto-updater** — signed updates from [loridotsh/lori](https://github.com/loridotsh/lori) releases
+- **In-app auto-updater** — signed updates from [loridotsh/lori-updates](https://github.com/loridotsh/lori-updates) releases
 - **Onboarding wizard** — workspace, appearance, providers, and marketplace setup
 - **Menu bar tray** — hide-on-close, background PTYs, session glance, and macOS notifications
 - **IDE deep-links** — open project folders in Cursor, VS Code, JetBrains, and more
@@ -45,4 +49,4 @@ First public beta for **macOS Apple Silicon**. Download from [GitHub Releases](h
 - **Platform:** macOS 10.15+ on Apple Silicon (M1/M2/M3/M4)
 - **First launch:** if macOS blocks the app, right-click Lori → **Open**, or allow in **System Settings → Privacy & Security** (unsigned beta build)
 
-[0.1.0]: https://github.com/loridotsh/lori/releases/tag/v0.1.0
+[0.1.0]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.0
