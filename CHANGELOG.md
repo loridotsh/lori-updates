@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.0] - 2026-06-30
+## [0.1.0] - 2026-07-01
 
 **First release of Lori** — a local desktop control plane for agentic coding on macOS (Apple Silicon).
 
@@ -19,56 +19,103 @@ Lori unifies the AI coding CLIs you already use — Claude Code, Codex, OpenCode
 - **Live handoff between tools** — switch a session from one CLI to another mid-conversation through a canonical transcript format.
 - **One config plane** — install an MCP plugin, skill, or provider key once; Lori syncs it into each CLI automatically.
 - **Lifecycle awareness** — running, idle, and permission states surfaced in the sidebar and macOS menu bar.
+- **Full git workflow in-app** — VS Code-style right sidebar with nested file tree, turn-scoped diffs, commit history graph, and commit viewer.
+- **Flexible provider routing** — per-agent provider assignment, dual-route gateways, and local inference via Ollama and vLLM.
 
 ### Added
 
 #### Workspace & sessions
 - Unified workspace running Claude Code, Codex, OpenCode, and Antigravity with full PTY terminals (xterm.js) and native macOS titlebar integration.
-- Session model with create, resume, inline rename, and switching across CLIs without losing context.
+- Session model with create, resume, inline rename, restart tab, and switching across CLIs without losing context.
 - Mid-session tool switching — hand off live conversations between CLIs via a canonical transcript format.
-- Per-session git worktrees — each session runs on its own isolated branch; auto `git init` for non-repo folders.
+- Per-session git worktrees — each session can run on its own isolated branch; auto `git init` for non-repo folders. Default isolation mode is **shared** (opt into worktree isolation per session or in Settings).
+- Per-agent launch arguments in Settings — pass custom flags to each CLI on session start.
 - Onboarding wizard for workspace, appearance, providers, and marketplace setup.
+- Optional onboarding email signup for Lori account and product updates (stored locally after server ack).
+
+#### Right sidebar & git
+- VS Code-style right sidebar (`⌘L`) with **Changes**, **Files**, and **History** tabs.
+- Nested file tree in the Changes sidebar for browsing staged and unstaged files.
+- Turn-scoped Code HUD — syntax-highlighted before/after split diff view in the Changes "This turn" tab.
+- Git history graph with commit list, filters, and a commit detail viewer.
+- Full git workflow — stage, unstage, commit, push, pull, sync, and in-app PR creation (via `gh`).
+- Differentiated Changes and History UX for worktree-isolated vs shared sessions.
+- Session title breadcrumb with path-style branch context in the header.
 
 #### Marketplace
 - Discover, install, configure, and sync MCP plugins and skills into every supported CLI from a single UI.
 - Apps (OAuth MCPs) — connect remote MCP servers (Slack, GitHub, Notion, and more) with native OAuth; no third-party gateway.
 - Skill and plugin enable/disable toggles that sync symlinks into each CLI's native directory.
+- In-app Ollama install and live hardware-gated model library.
 
 #### LLM providers
 - Configure provider API keys once and sync them into each CLI's native config.
 - Auto-import and refresh of provider credentials from existing native CLI configs.
-- Local inference support, including Ollama (in-app model install) and vLLM.
-
-#### Git & code review
-- Changes sidebar (`⌘L`) for stage, commit, push, pull, sync, and in-app PR creation.
-- Code HUD — turn-scoped git diff with a syntax-highlighted before/after split view.
+- Per-row provider assignment — toggle which agents each provider routes to, with native OpenCode slot support.
+- Custom dual-route providers with searchable model pickers (Fireworks, Claude Code gateways, and custom endpoints).
+- Multi-slot OpenCode import with active CLI indicators.
+- Bundled providers including Anthropic, OpenAI, Google, Ollama, vLLM, Venice AI, and AkashML.
+- Local inference support via Ollama (in-app model install) and vLLM (venv-aware detection).
 
 #### Usage & telemetry
-- Usage dashboard (Settings → Usage) with per-agent token totals, an activity heatmap, and a timeseries chart, sourced from native CLI transcripts.
-- Anonymous aggregate usage upload, with opt-out in Settings → Usage.
+- Usage dashboard (Settings → Usage) with per-agent token totals, an activity heatmap, timeseries chart, and session streak stats — sourced from native CLI transcripts.
+- Product analytics panels and improved telemetry dashboard metrics.
+- Anonymous aggregate usage upload, on by default with opt-out in Settings → Usage.
+- Token usage preserved when sessions or workspaces are removed.
 
-#### Platform
-- Agent lifecycle hooks — running, idle, and permission states via a local hook server and per-CLI notify plugins.
+#### Platform & settings
+- Agent lifecycle hooks — running, idle, and permission states via a local hook server and per-CLI notify plugins; expanded per-agent hook coverage for lifecycle and Code HUD refresh.
 - Menu bar tray with hide-on-close, background PTYs, session glance, and native macOS notifications.
 - IDE deep-links to open project folders in Cursor, VS Code, JetBrains, and more.
 - In-app auto-updater for signed, notarized releases delivered via the titlebar **Update** button.
-- Light and dark themes that follow system preference.
-- Keyboard shortcuts — `⌘\` sidebar, `⌘,` Settings, `⌘N` new session, `⌘K` panel search, `⌘L` Changes, `Esc` close overlay.
+- Light and dark themes that follow system preference, with full light-mode variants and a font smoothing toggle in Appearance settings.
+- About settings tab with version info and worktree base branch configuration.
+- Keyboard shortcuts — `⌘\` sidebar, `⌘,` Settings, `⌘N` new session, `⌘K` panel search, `⌘L` right sidebar, `Esc` close overlay.
+
+### Changed
+
+- Replaced violet accent theme with neutral graphite styling; toned-down dark mode with brighter text for clearer contrast.
+- Redesigned sidebar agent rows — flat indent, stable status column, git context, and diff stats on session items.
+- Redesigned Providers settings with macOS grouped layout, polished modals, and per-row agent controls.
+- Default sidebar width set to 220px.
+- Title bar is read-only; window dragging works via the native chrome.
+- Disabled web-style text selection on app chrome and browser context menu / reload shortcuts in production builds.
+- Speed up Changes sidebar and diff review with instant previews and virtualized code lines.
+- Simplified worktree Changes header to a compact single row.
+- Workspace chevron shown on hover instead of by default.
+
+### Fixed
+
+- Git workflow correctness in the Changes sidebar — fresh repos, untracked folders, stage/commit/push edge cases.
+- Code HUD — preview new (untracked) files and reduced diff-panel latency.
+- Claude Code token tracking for worktree and shared sessions.
+- Antigravity lifecycle flicker — no longer idles on `PostInvocation`.
+- Sidebar session indicators for suspended and unloaded sessions.
+- Black screen when closing a fullscreen window on macOS.
+- Terminal copy on Linux — selections written to the native clipboard when WebKitGTK does not emit a copy event.
+- Dual-route provider models, OpenCode import, and Claude model mapping combobox issues.
+- Agent switch menu opening unexpectedly when changing tabs.
+- Skills explore list flashing on install.
+- Telemetry uploads when install ID was never persisted.
+- Workspace open/read permission issues.
+- VirtualizedCodeLines viewport height initialization on mount.
+- macOS tray icon rendering and pre-release UI pattern inconsistencies.
 
 ### Security
 
 - macOS build is signed with an Apple Developer ID and notarized; hardened runtime entitlements allow spawning agent CLIs.
 - Local hook server authenticates requests with a shared secret (`X-Lori-Secret` header).
+- Security audit hardening across the desktop app and telemetry server — fail-closed auth in production, restricted marketplace/OAuth/git attack surfaces, path traversal protections, and safe URL handling in the UI.
 - Provider and MCP credentials are stored locally under `~/.lori/`. They are stored in plaintext in this release; OS Keychain integration is planned.
 
 ### Known limitations
 
-- macOS Apple Silicon only.
+- macOS Apple Silicon only (Linux fixes are in-tree for future ports).
 - Secrets are not yet stored in the OS Keychain.
 
 ### System requirements
 
 - macOS 11+ on Apple Silicon (M1 or later).
 
-[Unreleased]: https://github.com/loridotsh/lori
+[Unreleased]: https://github.com/loridotsh/lori/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.0
