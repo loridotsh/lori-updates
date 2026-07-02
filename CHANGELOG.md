@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-07-02
+
+Patch release with keyboard shortcut improvements, sidebar polish, and git status fixes since v0.1.0.
+
+### Added
+
+- **⌘1–⌘9** shortcuts to switch agent tabs in the active session (display order).
+- Terminal find/search support via `@xterm/addon-search`.
+
+### Changed
+
+- Frontend design polish — motion, copy, design tokens, and signature styling.
+- Workspace sidebar alignment, symmetry, and selection states.
+- Session dialogs and git status refresh performance in the sidebar.
+
+### Fixed
+
+- **⌘N** (new session) works while the terminal (xterm) has focus.
+- Git status parsing for renamed and quoted porcelain paths in the Changes sidebar.
+- Agent lifecycle hooks transition from permission to running after `PostToolUse`.
+- TypeScript errors that blocked production builds.
+
 ## [0.1.0] - 2026-07-01
 
 **First release of Lori** — a local desktop control plane for agentic coding on macOS (Apple Silicon).
@@ -117,5 +139,6 @@ Lori unifies the AI coding CLIs you already use — Claude Code, Codex, OpenCode
 
 - macOS 11+ on Apple Silicon (M1 or later).
 
-[Unreleased]: https://github.com/loridotsh/lori/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/loridotsh/lori/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.1
 [0.1.0]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.0
