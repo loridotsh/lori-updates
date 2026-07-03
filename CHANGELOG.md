@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-07-03
+
+Faster Changes sidebar, smarter branch switching, and clearer git actions in History.
+
+### Added
+
+- **Branch switch preflight** — before switching branches, Lori checks for conflicting uncommitted files and lets you bring everything along or remove only the conflicting paths.
+- **Update from main** in History — on a feature branch in a shared session, pull the latest `main` into your branch without needing a remote tracking branch first.
+
+### Changed
+
+- **Changes file list** stays responsive with thousands of changed files.
+- History **Push** and **Pull** show counts against your branch’s remote (`origin`), not misleading numbers vs `main`.
+- History git actions are disabled when you’re only *viewing* another branch’s commits — switch to that branch in Changes first.
+
+### Fixed
+
+- Branch switching no longer fails silently on untracked files that would block checkout.
+- Lori-owned stash entries are restored safely after a branch switch, with clear messaging if something needs your attention.
+
 ## [0.1.2] - 2026-07-03
 
 Branch management and safer quit flow in the Changes sidebar.
