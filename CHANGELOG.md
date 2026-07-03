@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-07-03
+
+Branch management and safer quit flow in the Changes sidebar.
+
+### Added
+
+- **Branch picker** in the Changes sidebar — switch to an existing branch or create a new one from the branch badge. Uncommitted changes are preserved when you switch.
+- **Quit confirmation** — Lori asks before closing when you have active sessions, so a stray ⌘Q doesn't end your work.
+
+### Changed
+
+- Agent tab label updated from "Claude Code" to **Claude**.
+- Refined branch picker and quit dialog styling for clearer actions in light and dark mode.
+- Quit dialog shows how many active sessions will be closed.
+
+### Fixed
+
+- Switching to a branch that only exists on the remote now works from the branch picker.
+- Creating a new branch from the picker is more reliable.
+- Branch-switch warnings (e.g. when restoring your changes needs attention) are shown as notices instead of errors.
+
 ## [0.1.1] - 2026-07-02
 
 Patch release with keyboard shortcut improvements, sidebar polish, and git status fixes since v0.1.0.
