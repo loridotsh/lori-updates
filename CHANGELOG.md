@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-07-04
+
+Linux support, simpler custom provider setup, and broader compatibility across agents.
+
+### Added
+
+- **Linux support** — Lori is now available on Linux alongside macOS. Download the AppImage, make it executable, and run it. In-app updates work after the first AppImage install.
+- **Simpler custom providers** — add a provider with a single URL; Lori detects how to connect automatically.
+- **Cross-agent provider routing** — use more custom endpoints with Claude, Codex, and OpenCode without manual setup for each combination.
+
+### Changed
+
+- Custom provider setup uses one URL field instead of separate connection-type choices.
+- Clearer experience when pairing custom providers with Claude.
+
+### Fixed
+
+- Custom provider routing stays correct when Lori cannot infer the connection type from the URL alone.
+
+### Platform notes
+
+- **macOS** — Apple Silicon with in-app updates.
+- **Linux** — x86_64 AppImage with in-app updates. Users on the legacy bare binary should switch to the AppImage once.
+- **Windows** — not supported yet.
+
 ## [0.1.3] - 2026-07-03
 
 Faster Changes sidebar, smarter branch switching, and clearer git actions in History.
@@ -180,6 +205,9 @@ Lori unifies the AI coding CLIs you already use — Claude Code, Codex, OpenCode
 
 - macOS 11+ on Apple Silicon (M1 or later).
 
-[Unreleased]: https://github.com/loridotsh/lori/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/loridotsh/lori/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/loridotsh/lori-updates/releases/tag/v1.2.0
+[0.1.3]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.3
+[0.1.2]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.2
 [0.1.1]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.1
 [0.1.0]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.0
