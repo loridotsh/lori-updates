@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-07-06
+
+Hermes joins the workspace, and Connections works better with more providers.
+
+### Added
+
+- **Hermes** — run Hermes in Lori alongside your other coding tools. Open and resume Hermes sessions, switch tabs like any other agent, and see when it’s working, idle, or waiting on you.
+- **Providers for Hermes** — enable your LLM providers for Hermes in Connections; Lori keeps credentials in sync so you don’t have to copy keys by hand.
+- **Extensions and skills** — marketplace installs sync into Hermes the same way they do for your other agents.
+- **Easier first-time setup** — if you already use Hermes on its own, Lori can import your existing provider setup when you open Connections.
+
+### Fixed
+
+- **Claude Code on Groq and similar providers** — the Claude Code option and **Translated** label show again on OpenAI-style providers where Lori bridges requests locally.
+
 ## [1.2.0] - 2026-07-04
 
 Linux support, simpler custom provider setup, and broader compatibility across agents.
