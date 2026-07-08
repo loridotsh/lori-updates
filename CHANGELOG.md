@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-07-08
+
+Automations and Cursor join the workspace, with polish across the new Automations experience.
+
+### Added
+
+- **Automations** — run a coding agent task in an isolated git worktree, on demand or on a schedule. Open **Automations** from the sidebar to create jobs, pick a workspace and agent (Claude, Codex, or OpenCode), write an instruction, and choose **Manual** or **Schedule** (hourly, daily, weekly, or custom cron).
+- **Automation controls** — set sandbox level (read-only, propose changes, or full write), optional base branch, max runtime, and concurrent run limits. Pause, resume, run now, or cancel in-flight runs from the list or detail view.
+- **Automation run history** — each automation has a run log with live status (queued, running, needs permission, succeeded, failed, timed out). Open a run to see duration, branch, exit code, raw output, and a formatted **agent summary** when the CLI provides one.
+- **Cursor** — run the Cursor Agent CLI in Lori alongside your other tools. Start and resume sessions, switch tabs like any other agent, and see when it's working, idle, or waiting on you.
+- **Extensions and skills for Cursor** — marketplace installs sync into Cursor the same way they do for your other agents.
+- **Cursor usage tracking** — token usage from Cursor runs appears in Settings → Usage when the agent reports it.
+
+### Changed
+
+- **Sidebar navigation** — **Automations** sits alongside Extensions, Skills, and Connections with a cleaner, divider-free nav. Re-clicking **Automations** returns you to the list when you're viewing a detail screen.
+- **Automation form** — agent picker shows CLI icons; schedule setup uses clearer hour, minute, and weekday controls instead of raw cron by default.
+- **Automation run results** — summaries render as formatted markdown in a resizable right sidebar instead of a modal, with a tidier toolbar for **Active** and **Run now**.
+- **Overlay behavior** — opening a session from the sidebar closes Automations, and session highlighting clears while a full-panel overlay is open so the UI doesn't look like two places are active at once.
+- **Non-git workspaces** — automations run in the project folder when a workspace isn't a git repo.
+
+### Fixed
+
+- **Codex automations** — unattended Codex runs no longer fail with an unexpected-argument error.
+- **Cursor permission indicator** — the sidebar correctly shows when Cursor is waiting on shell or MCP approval.
+
 ## [1.3.1] - 2026-07-06
 
 Polish for in-app updates and agent status at a glance.
