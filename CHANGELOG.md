@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.1] - 2026-07-08
+
+Safer tab closes with clearer confirmation copy.
+
+### Added
+
+- **Close tab confirmation** — closing an agent or terminal tab now asks before tearing down the session, so a live agent or shell is not lost by accident.
+
+### Changed
+
+- **Close tab dialog** — clearer titles and messages for agent vs terminal tabs, including when a process is still active.
+
 ## [1.4.0] - 2026-07-08
 
 Automations and Cursor join the workspace, with polish across the new Automations experience.
