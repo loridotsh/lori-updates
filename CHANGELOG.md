@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.3] - 2026-07-09
+
+### Added
+
+- **What's New modal** — after updating Lori, a one-time changelog modal highlights what changed in the new version.
+
+### Changed
+
+- **OAuth success page** — the browser callback page after connecting an app now matches Lori's dark Graphite styling.
+
 ## [1.4.2] - 2026-07-09
 
 Marketplace Apps expansion and faster Extensions loading.
