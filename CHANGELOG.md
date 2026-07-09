@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.2] - 2026-07-09
+
+Marketplace Apps expansion and faster Extensions loading.
+
+### Added
+
+- **More Apps in Extensions** — expanded catalog of remote MCP apps (Amplitude, ClickUp, Cloudflare, Context7, Dropbox, Exa, Heroku, Hugging Face, Miro, Plaid, PostHog, Prisma, Railway, Semgrep, Supabase, Wix, and more) with icons in the marketplace.
+
+### Changed
+
+- **Extensions list loads faster** — the Apps list no longer blocks on OAuth discovery probes while browsing; connection still validates when you connect an app.
+
+### Fixed
+
+- **Linux release builds** — remote AppImage fetch after Docker builds no longer fails due to a broken SSH listing command.
+
 ## [1.4.1] - 2026-07-08
 
 Safer tab closes with clearer confirmation copy.
@@ -267,7 +283,11 @@ Lori unifies the AI coding CLIs you already use — Claude Code, Codex, OpenCode
 
 - macOS 11+ on Apple Silicon (M1 or later).
 
-[Unreleased]: https://github.com/loridotsh/lori/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/loridotsh/lori/compare/v1.4.1...HEAD
+[1.4.1]: https://github.com/loridotsh/lori-updates/releases/tag/v1.4.1
+[1.4.0]: https://github.com/loridotsh/lori-updates/releases/tag/v1.4.0
+[1.3.1]: https://github.com/loridotsh/lori-updates/releases/tag/v1.3.1
+[1.3.0]: https://github.com/loridotsh/lori-updates/releases/tag/v1.3.0
 [1.2.0]: https://github.com/loridotsh/lori-updates/releases/tag/v1.2.0
 [0.1.3]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.3
 [0.1.2]: https://github.com/loridotsh/lori-updates/releases/tag/v0.1.2
