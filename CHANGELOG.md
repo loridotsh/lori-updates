@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.5] - 2026-07-11
+
+A refreshed sidebar and a smoother browsing experience.
+
+### Changed
+
+- **Sidebar layout** — Workspaces are now at the top so your projects and sessions are front and center; Extensions, Skills, Automations, and Connections sit at the bottom.
+- **Cleaner look** — softer borders in the sidebar and Changes panel, and the titlebar flows into the sidebar as one surface.
+- **Extensions** — easier to browse and spot what you can install, with nicer loading and empty states when a library is empty.
+- **Welcome screen** — clearer prompts when you're getting started, including which agents Lori found on your machine.
+
 ## [1.4.4] - 2026-07-10
 
 A cleaner, more consistent look across Lori.
