@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.4] - 2026-07-10
+
+UI polish across the Graphite theme.
+
+### Changed
+
+- **Primary actions** — clearer call-to-action styling on Graphite with a dedicated interactive accent token; shared `Button` and `Alert` components replace one-off styles across the app.
+- **Design tokens** — metadata text is floored at 11px for readability; hardcoded amber and blue accents are replaced with semantic tokens throughout Automations, Changes, Marketplace, and Settings.
+
+### Fixed
+
+- **Modal close button** — the X no longer shows a focus ring when a dialog first opens on macOS.
+
 ## [1.4.3] - 2026-07-09
 
 ### Added
