@@ -9,16 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.4] - 2026-07-10
 
-UI polish across the Graphite theme.
+A cleaner, more consistent look across Lori.
 
 ### Changed
 
-- **Primary actions** — clearer call-to-action styling on Graphite with a dedicated interactive accent token; shared `Button` and `Alert` components replace one-off styles across the app.
-- **Design tokens** — metadata text is floored at 11px for readability; hardcoded amber and blue accents are replaced with semantic tokens throughout Automations, Changes, Marketplace, and Settings.
+- **Buttons and alerts** — primary actions are easier to spot, and dialogs and notices feel more consistent everywhere you work in Lori.
+- **Typography and color** — small labels and metadata are easier to read; accent colors look more cohesive across Automations, Changes, Marketplace, and Settings.
 
 ### Fixed
 
-- **Modal close button** — the X no longer shows a focus ring when a dialog first opens on macOS.
+- **Dialog close button** — fixed a distracting highlight on the × button when a dialog first opens on macOS.
 
 ## [1.4.3] - 2026-07-09
 
