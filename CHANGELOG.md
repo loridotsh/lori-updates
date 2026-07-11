@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.6] - 2026-07-11
+
+Easier project setup and polish across onboarding and the sidebar.
+
+### Added
+
+- **Welcome actions** — open an existing folder, create a new project, or clone a repo right from the empty workspace screen.
+- **Markdown preview** — view rendered markdown in the file viewer with a Preview / Raw toggle.
+
+### Changed
+
+- **Onboarding** — refreshed welcome flow with the Lori mark, real agent icons, and ⌘⏎ to continue on every step.
+- **Menu bar icon** — Lori now uses the mark in the macOS menu bar.
+- **Sidebar and syntax** — tidier hover states and shortcut hints; improved code highlighting in light mode.
+
 ## [1.4.5] - 2026-07-11
 
 A refreshed sidebar, built-in browsing, and a smoother experience throughout Lori.
