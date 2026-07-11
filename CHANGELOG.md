@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.7] - 2026-07-11
+
+Better provider support across Codex and Hermes.
+
+### Added
+
+- **Codex model picker** — choose which model Codex uses per provider in Connections, the same way you configure Claude.
+
+### Changed
+
+- **Custom providers for Hermes** — your custom OpenAI and Anthropic endpoints now sync into Hermes automatically instead of being skipped.
+- **Provider settings copy** — clearer wording that applies to all agents, not just OpenCode.
+- **Custom provider icons** — custom providers use the Lori mark for a more consistent look in Connections.
+
 ## [1.4.6] - 2026-07-11
 
 Easier project setup and polish across onboarding and the sidebar.
