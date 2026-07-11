@@ -9,7 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.5] - 2026-07-11
 
-A refreshed sidebar and a smoother browsing experience.
+A refreshed sidebar, built-in browsing, and a smoother experience throughout Lori.
+
+### Added
+
+- **Browser tab** — open a web page right inside Lori alongside your agents and terminals, with back, forward, reload, and URLs that stick around when you come back.
 
 ### Changed
 
@@ -17,6 +21,10 @@ A refreshed sidebar and a smoother browsing experience.
 - **Cleaner look** — softer borders in the sidebar and Changes panel, and the titlebar flows into the sidebar as one surface.
 - **Extensions** — easier to browse and spot what you can install, with nicer loading and empty states when a library is empty.
 - **Welcome screen** — clearer prompts when you're getting started, including which agents Lori found on your machine.
+
+### Fixed
+
+- **Browser navigation** — fixed a crash that could happen when moving between pages in a browser tab.
 
 ## [1.4.4] - 2026-07-10
 
