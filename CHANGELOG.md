@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.8] - 2026-07-12
+
+More reliable connected apps in Hermes, and a cleaner Connections list.
+
+### Fixed
+
+- **Hermes connected apps** — authenticated MCP apps (Cloudflare, Notion, Canva, Hugging Face, and others) now send credentials correctly, so their tools load instead of failing to connect.
+
+### Changed
+
+- **Codex with local models** — choose which Ollama or vLLM model Codex uses from Connections, the same way you can for other providers.
+- **Connections list** — provider rows show assigned agents as icons only, without repeating their names in the subtitle.
+
 ## [1.4.7] - 2026-07-11
 
 Better provider support across Codex and Hermes.
