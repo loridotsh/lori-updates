@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.9] - 2026-07-15
 
-Smoother everyday use — easier folder access after restart, clearer agent switching, and a few quality-of-life upgrades in the terminal and marketplace.
+Smoother everyday use — easier folder access after restart, clearer agent switching, cleaner theming, and a few quality-of-life upgrades in the terminal and marketplace.
 
 ### Added
 
@@ -23,11 +23,15 @@ Smoother everyday use — easier folder access after restart, clearer agent swit
 - **Marketplace Explore** — clearer browsing when discovering apps, plugins, and skills.
 - **Files panel** — the file tree stays in sync as files change on disk.
 - **Snappier sessions** — switching sessions, opening tabs, and everyday git/UI actions feel more responsive.
+- **Color system** — semantic colors now use OKLCH for more consistent themes across light and dark Graphite, including the terminal.
 
 ### Fixed
 
 - **Codex hand-off** — continuing a conversation from Codex into another coding agent keeps more of the prior chat, so the next agent isn’t starting from a blank slate.
 - **Workspace access after Mac restart** — Lori no longer treats a blocked folder as “not a workspace”; you get a clear message and a path to restore access.
+- **Claude session titles** — sessions that start with a local slash command no longer pick up the internal “Caveat…” harness text as their title.
+- **OAuth app card** — connected-app fallback styling follows the active theme instead of a hardcoded indigo.
+- **Model download progress** — Ollama download progress animates more smoothly without jank.
 
 ## [1.4.8] - 2026-07-12
 
