@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.9] - 2026-07-15
+
+Smoother everyday use — easier folder access after restart, clearer agent switching, and a few quality-of-life upgrades in the terminal and marketplace.
+
+### Added
+
+- **Re-authorize folder** — if macOS blocks a workspace after reboot (Desktop, Documents, and similar), Lori shows a clear fix: re-authorize the folder from the sidebar or Files panel without losing your sessions.
+- **Terminal status bar** — a compact status strip under the terminal with useful session context, plus a review affordance in the titlebar when you have changes to look at.
+- **Links open in Lori** — click a URL in the terminal and it opens in Lori’s built-in browser tab instead of bouncing you out to another app.
+
+### Changed
+
+- **Agent switcher** — only agents installed on your machine show up when you switch or replace an agent, so you aren’t offered tools you can’t run.
+- **Marketplace Explore** — clearer browsing when discovering apps, plugins, and skills.
+- **Files panel** — the file tree stays in sync as files change on disk.
+- **Snappier sessions** — switching sessions, opening tabs, and everyday git/UI actions feel more responsive.
+
+### Fixed
+
+- **Codex hand-off** — continuing a conversation from Codex into another coding agent keeps more of the prior chat, so the next agent isn’t starting from a blank slate.
+- **Workspace access after Mac restart** — Lori no longer treats a blocked folder as “not a workspace”; you get a clear message and a path to restore access.
+
 ## [1.4.8] - 2026-07-12
 
 More reliable connected apps in Hermes, and a cleaner Connections list.
