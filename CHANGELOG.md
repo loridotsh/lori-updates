@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.10] - 2026-07-19
+
+Final 1.4.x release — a richer prompt bar with @ file mentions, clearer marketplace and Ollama flows, and a handful of everyday reliability fixes. Windows builds land in 1.5.
+
+### Added
+
+- **Prompt composer** — a Warp-style input under agent terminals for multi-line messages (Enter to send, Shift+Enter for a new line), with drafts that stick around when you switch panes.
+- **@ file mentions** — type `@` in the composer to search and insert workspace files as chips; toggle in Settings → Sessions.
+- **Marketplace restart banner** — after you install or toggle an extension, tabs that need a restart show an in-tab “Restart now” prompt so the agent picks up the new config.
+- **Status bar toggle** — Settings → Sessions can hide the terminal status strip if you want a cleaner bottom edge.
+
+### Changed
+
+- **Extensions library** — sturdier install/configure paths and clearer library browsing for apps, plugins, and memory tools.
+- **Ollama model picking** — clearer installed-model selection when wiring Ollama in Connections.
+- **Quit and resume copy** — quit confirmation explains that sessions and history are saved; suspended sessions say “Click to resume.”
+
+### Fixed
+
+- **Changes after agent turns** — git status in the Changes sidebar refreshes when an agent finishes a turn, so new edits show up without a manual refresh.
+- **Claude provider switch** — switching Claude to another provider still works when the previous gateway’s API key was cleared.
+- **OAuth reconnect** — abandoning a connect flow no longer leaves the callback port stuck for the next attempt.
+
 ## [1.4.9] - 2026-07-15
 
 Smoother everyday use — easier folder access after restart, clearer agent switching, cleaner theming, and a few quality-of-life upgrades in the terminal and marketplace.
