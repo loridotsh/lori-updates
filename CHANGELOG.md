@@ -7,9 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.11] - 2026-07-20
+
+Richer prompt composer slash commands and real media previews in the Files panel.
+
+### Added
+
+- **Slash command palette** — type `/` in the prompt composer to insert agent CLI commands (Claude, Codex, OpenCode, Antigravity, Hermes, Cursor), ranked like `@` file mentions.
+- **Skills in `/` menu** — enabled marketplace skills for the active agent show up alongside built-in commands, so you can insert `/skill-name` without leaving the composer.
+- **Media previews** — the Files panel previews images, video, audio, and PDFs instead of showing binary placeholders.
+
+### Changed
+
+- **Slash catalogs** — per-agent command lists expanded to match current CLI docs, with fuller coverage for every supported agent.
+
 ## [1.4.10] - 2026-07-19
 
-Final 1.4.x release — a richer prompt bar with @ file mentions, clearer marketplace and Ollama flows, and a handful of everyday reliability fixes. Windows builds land in 1.5.
+A richer prompt bar with @ file mentions, clearer marketplace and Ollama flows, and a handful of everyday reliability fixes.
 
 ### Added
 
