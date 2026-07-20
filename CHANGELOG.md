@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.12] - 2026-07-20
+
+Pi coding agent support, one-click CLI install, and an update-available popup with release notes.
+
+### Added
+
+- **Pi** — run the [Pi](https://pi.dev/) coding agent in Lori alongside your other tools. Start and resume sessions, sync marketplace skills into `~/.pi/agent/skills/`, see running/idle status via the Lori notify extension, and sync Connections providers into `~/.pi/agent/auth.json` and `models.json`.
+- **Pi MCP marketplace sync** — Lori writes enabled MCP plugins to `~/.pi/agent/mcp.json` and ensures the community [`pi-mcp-adapter`](https://www.npmjs.com/package/pi-mcp-adapter) package is listed in Pi settings (installing it when the `pi` CLI is available).
+- **One-click CLI install** — Settings → Coding tools shows an Install button for missing agents (official installer, npm, or Homebrew depending on the tool and OS), with a live log and copyable command.
+- **Update available popup** — when a new Lori version is ready, a modal shows the release notes with Update & restart or Later (reminds again after a day).
+
 ## [1.4.11] - 2026-07-20
 
 Richer prompt composer slash commands and real media previews in the Files panel.
