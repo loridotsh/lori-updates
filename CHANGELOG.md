@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.13] - 2026-07-21
+
+In-app file editing, git-aware Files explorer, smoother terminal scrolling, and local HTML previews in the embedded browser.
+
+### Added
+
+- **Edit files in-app** — the file viewer is now an editor: click the pencil (or open any text file) and type. Autosaves after a pause, ⌘S saves immediately, and Tab indents using the file's own style. Saves are crash-atomic (temp file + rename), keep the file's permissions and CRLF/LF line endings, and refuse to clobber: if the file changed on disk since you opened it, you choose to reload or overwrite. Editing stays disabled for binary, image, oversized (2 MB+), and non-UTF-8 files so a save can never destroy data.
+- **Git status in the Files explorer** — changed files show status letters (M/A/D/R/U) and colored names, and folders with changes are tinted so you can spot dirty areas at a glance. New toolbar with collapse-all and refresh.
+- **Local HTML in the browser** — open workspace HTML via `file://`, absolute paths, or `./` / `../` in the omnibox. Loads stay scoped to the session workspace so relative CSS/JS/images work without exposing the rest of the disk.
+
+### Fixed
+
+- **Terminal scrolling** — smoother stick-to-bottom while agents stream output, native macOS trackpad scrollback, and fewer layout-driven jumps when resizing the sidebar or Changes panel. Hidden and inactive panes keep flushing PTY output so backpressure acks never stall.
+
+### Changed
+
+- **Confirm dialogs** — cleaner, divider-free modal shell with neutral ink confirm actions (no saturated blue) for close-tab and other confirmations.
+- **Untracked file actions are unambiguous** — untracked rows now show a "U" letter (previously the same green dot as added files), and deleting untracked files says "Delete permanently" everywhere, so it can't be mistaken for a reversible discard.
+
 ## [1.4.12] - 2026-07-20
 
 Pi coding agent support, one-click CLI install, and an update-available popup with release notes.
@@ -38,7 +57,7 @@ A richer prompt bar with @ file mentions, clearer marketplace and Ollama flows, 
 
 ### Added
 
-- **Prompt composer** — a Warp-style input under agent terminals for multi-line messages (Enter to send, Shift+Enter for a new line), with drafts that stick around when you switch panes.
+- **Prompt composer** — a dedicated prompt input under agent terminals for multi-line messages (Enter to send, Shift+Enter for a new line), with drafts that stick around when you switch panes.
 - **@ file mentions** — type `@` in the composer to search and insert workspace files as chips; toggle in Settings → Sessions.
 - **Marketplace restart banner** — after you install or toggle an extension, tabs that need a restart show an in-tab “Restart now” prompt so the agent picks up the new config.
 - **Status bar toggle** — Settings → Sessions can hide the terminal status strip if you want a cleaner bottom edge.
@@ -343,7 +362,7 @@ Lori unifies the AI coding CLIs you already use — Claude Code, Codex, OpenCode
 - **Live handoff between tools** — switch a session from one CLI to another mid-conversation through a canonical transcript format.
 - **One config plane** — install an MCP plugin, skill, or provider key once; Lori syncs it into each CLI automatically.
 - **Lifecycle awareness** — running, idle, and permission states surfaced in the sidebar and macOS menu bar.
-- **Full git workflow in-app** — VS Code-style right sidebar with nested file tree, turn-scoped diffs, commit history graph, and commit viewer.
+- **Full git workflow in-app** — right sidebar with nested file tree, turn-scoped diffs, commit history graph, and commit viewer.
 - **Flexible provider routing** — per-agent provider assignment, dual-route gateways, and local inference via Ollama and vLLM.
 
 ### Added
@@ -358,7 +377,7 @@ Lori unifies the AI coding CLIs you already use — Claude Code, Codex, OpenCode
 - Optional onboarding email signup for Lori account and product updates (stored locally after server ack).
 
 #### Right sidebar & git
-- VS Code-style right sidebar (`⌘L`) with **Changes**, **Files**, and **History** tabs.
+- Right sidebar (`⌘L`) with **Changes**, **Files**, and **History** tabs.
 - Nested file tree in the Changes sidebar for browsing staged and unstaged files.
 - Turn-scoped Code HUD — syntax-highlighted before/after split diff view in the Changes "This turn" tab.
 - Git history graph with commit list, filters, and a commit detail viewer.
