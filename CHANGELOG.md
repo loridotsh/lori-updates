@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.14] - 2026-07-22
+
+More reliable Connections provider sync and a sturdier Anthropic translation bridge.
+
+### Fixed
+
+- **Provider sync races** — Connections config mutations are serialized so concurrent register/update/import flows no longer clobber each other; frontend register/sync edge cases from the providers audit are closed.
+- **Anthropic bridge errors** — the translation bridge passes through HTTP status correctly, hardens SSE framing, and surfaces upstream failures more clearly instead of hanging or dropping the stream.
+- **Provider URL detection** — clearer auto-detect for custom OpenAI-compatible endpoints when adding a provider.
+
 ## [1.4.13] - 2026-07-21
 
 In-app file editing, git-aware Files explorer, smoother terminal scrolling, and local HTML previews in the embedded browser.
