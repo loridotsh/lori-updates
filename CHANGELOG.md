@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-07-22
+
+Lori is now available on Windows, with the same in-app updates you already get on Mac and Linux.
+
+### Added
+
+- **Windows** — download Lori for Windows from [GitHub Releases](https://github.com/loridotsh/lori-updates/releases), install it, and keep working with your agents in one workspace. After install, updates show up in the titlebar like on other platforms. Windows may warn on first open until broader Windows signing lands.
+
+### Changed
+
+- **Releases for every platform** — each Lori release now ships Mac, Linux, and Windows builds together, so you can pick the installer for your machine from the same release page.
+
 ## [1.4.14] - 2026-07-22
 
 More reliable Connections provider sync and a sturdier Anthropic translation bridge.
