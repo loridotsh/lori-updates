@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.5.0] - 2026-07-22
+## [1.5.0] - 2026-07-23
 
 Lori is now available on Windows, with the same in-app updates you already get on Mac and Linux.
 
@@ -18,6 +18,13 @@ Lori is now available on Windows, with the same in-app updates you already get o
 ### Changed
 
 - **Releases for every platform** — each Lori release now ships Mac, Linux, and Windows builds together, so you can pick the installer for your machine from the same release page.
+
+### Fixed
+
+- **Windows terminal** — agent output renders as a live terminal again instead of looking like frozen plain text, with clearer fonts and spacing in the packaged Windows build.
+- **Windows browser tabs** — opening a browser tab no longer fails on Windows.
+- **Closing Lori on Windows** — quitting from the window close button asks for confirmation so you don’t lose running sessions by accident.
+- **Agent tabs** — closed tabs no longer come back as empty drafts after a refresh, and the “no CLI found” empty state no longer flashes while agents are still being discovered.
 
 ## [1.4.14] - 2026-07-22
 
