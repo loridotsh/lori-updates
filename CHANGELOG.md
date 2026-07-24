@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.1] - 2026-07-24
+
+Smoother Files and Changes workflows, plus a clearer path when no IDE is installed.
+
+### Improved
+
+- **Files panel** — the in-app editor syncs more reliably with disk, fills the panel cleanly, and keeps theme-aware syntax highlighting readable in light and dark modes.
+- **Changes sidebar** — changed files show as a simple flat list (like VS Code), so it’s easier to scan and act on what’s dirty.
+- **No IDE installed** — a quieter chip in the UI opens a short help panel instead of feeling like an error.
+
+### Fixed
+
+- Opening the IDE help panel no longer locks up the UI in a render loop.
+
 ## [1.5.0] - 2026-07-23
 
 Lori is now available on Windows, with the same in-app updates you already get on Mac and Linux.
