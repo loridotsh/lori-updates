@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.3] - 2026-07-25
+
+Richer conversation handoffs when you switch agents — tool use, reasoning, and attachments come along, not just the text.
+
+### Improved
+
+- **Switch agents with full context** — moving a session between Claude, Codex, OpenCode, Cursor, Antigravity, Pi, and the other supported CLIs keeps the conversation looking like the real chat, including tools and attachments, instead of a flat text paste.
+- **Simpler switch dialog** — Sync always carries history forward; the extra “fresh session” choice is gone so it’s clearer what will happen.
+
+### Fixed
+
+- Hand-offs into Pi, Codex, Cursor, OpenCode, and Antigravity open and show history more reliably, including chats that previously looked empty or missing messages after sync.
+
 ## [1.5.2] - 2026-07-25
 
 Desktop controls in Settings, better workspace icons, and a cleaner Mac titlebar.
