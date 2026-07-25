@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.2] - 2026-07-25
+
+Desktop controls in Settings, better workspace icons, and a cleaner Mac titlebar.
+
+### Added
+
+- **Desktop settings** — control close behavior, menu bar tray, notifications, launch at login, and idle session suspend from Settings.
+
+### Improved
+
+- **Workspace icons** — Lori finds more project logos for nested frontend apps and monorepos, and sidebar avatars fill their tiles without an extra frame.
+- **macOS titlebar** — traffic lights sit centered in the overlay header.
+- **Destructive confirms** — delete and similar actions use a clearer danger button on dark UI.
+
 ## [1.5.1] - 2026-07-24
 
 Smoother Files and Changes workflows, plus a clearer path when no IDE is installed.
