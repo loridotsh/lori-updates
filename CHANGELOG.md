@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.4] - 2026-07-27
+
+Snappier Skills Explore installs and a simpler Settings header.
+
+### Improved
+
+- **Skills Explore** — charts and search stay on screen while they refresh, so Add stays clickable; installed skills update right away, and reopening Explore doesn’t flash an empty loading state.
+- **Settings** — the sidebar header is a single back control instead of a stacked title row.
+
 ## [1.5.3] - 2026-07-25
 
 Richer conversation handoffs when you switch agents — tool use, reasoning, and attachments come along, not just the text.
